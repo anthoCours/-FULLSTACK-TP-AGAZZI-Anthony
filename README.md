@@ -112,3 +112,8 @@ Partie décrivant la partie front
   React car je connais cette technologie et la richesse de ses librairies (calendrier, responsive, formulaires, ...), cela me permet un développement rapide et efficace
 
 - Wireframe [Template visuel](https://projects.invisionapp.com/freehand/document/41o73z6Re)
+
+## Bilan
+
+La partie front a été réalisé sans style. Le data flow est manquant
+La partie back dispose de nombreux endpoints, il faudrait en supprimer pour plus de sécurité.
