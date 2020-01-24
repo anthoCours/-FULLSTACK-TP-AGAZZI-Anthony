@@ -20,7 +20,7 @@ import {
 import {Hairdresser} from '../models';
 import {HairdresserRepository} from '../repositories';
 
-export class HaidressersController {
+export class HairdressersController {
   constructor(
     @repository(HairdresserRepository)
     public hairdresserRepository : HairdresserRepository,
@@ -72,7 +72,7 @@ export class HaidressersController {
           'application/json': {
             schema: {
               type: 'array',
-              items: getModelSchemaRef(Hairdresser, {includeRelations: true}),
+              items: getModelSchemaRef(Hairdresser),
             },
           },
         },

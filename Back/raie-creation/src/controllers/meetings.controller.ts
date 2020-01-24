@@ -20,7 +20,7 @@ import {
 import {Meeting} from '../models';
 import {MeetingRepository} from '../repositories';
 
-export class MeetsController {
+export class MeetingsController {
   constructor(
     @repository(MeetingRepository)
     public meetingRepository : MeetingRepository,

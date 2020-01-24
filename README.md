@@ -71,6 +71,10 @@
   - création wireframes
 - 11h46
   - Commencement front
+  - choix composant
+
+- 16h  
+  - Fausse donnée
 
 ## Back
 

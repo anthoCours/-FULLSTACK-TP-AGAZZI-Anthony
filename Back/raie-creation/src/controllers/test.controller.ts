@@ -20,13 +20,13 @@ import {
 import {Customer} from '../models';
 import {CustomerRepository} from '../repositories';
 
-export class CustomerController {
+export class TestController {
   constructor(
     @repository(CustomerRepository)
     public customerRepository : CustomerRepository,
   ) {}
 
-  @post('/customers', {
+  @post('/test', {
     responses: {
       '200': {
         description: 'Customer model instance',
@@ -50,7 +50,7 @@ export class CustomerController {
     return this.customerRepository.create(customer);
   }
 
-  @get('/customers/count', {
+  @get('/test/count', {
     responses: {
       '200': {
         description: 'Customer model count',
@@ -64,7 +64,7 @@ export class CustomerController {
     return this.customerRepository.count(where);
   }
 
-  @get('/customers', {
+  @get('/test', {
     responses: {
       '200': {
         description: 'Array of Customer model instances',
@@ -85,7 +85,7 @@ export class CustomerController {
     return this.customerRepository.find(filter);
   }
 
-  @patch('/customers', {
+  @patch('/test', {
     responses: {
       '200': {
         description: 'Customer PATCH success count',
@@ -107,13 +107,13 @@ export class CustomerController {
     return this.customerRepository.updateAll(customer, where);
   }
 
-  @get('/customers/{id}', {
+  @get('/test/{id}', {
     responses: {
       '200': {
         description: 'Customer model instance',
         content: {
           'application/json': {
-            schema: getModelSchemaRef(Customer),
+            schema: getModelSchemaRef(Customer, {includeRelations: true}),
           },
         },
       },
@@ -126,7 +126,7 @@ export class CustomerController {
     return this.customerRepository.findById(id, filter);
   }
 
-  @patch('/customers/{id}', {
+  @patch('/test/{id}', {
     responses: {
       '204': {
         description: 'Customer PATCH success',
@@ -147,7 +147,7 @@ export class CustomerController {
     await this.customerRepository.updateById(id, customer);
   }
 
-  @put('/customers/{id}', {
+  @put('/test/{id}', {
     responses: {
       '204': {
         description: 'Customer PUT success',
@@ -161,7 +161,7 @@ export class CustomerController {
     await this.customerRepository.replaceById(id, customer);
   }
 
-  @del('/customers/{id}', {
+  @del('/test/{id}', {
     responses: {
       '204': {
         description: 'Customer DELETE success',
