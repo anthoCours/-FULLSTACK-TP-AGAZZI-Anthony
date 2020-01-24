@@ -1,21 +1,23 @@
 {
   "ids": {
-    "Hairdresser": 5,
-    "Customer": 6
+    "Client": 3,
+    "Coiffeur": 3,
+    "Rdv": 5
   },
   "models": {
-    "Hairdresser": {
-      "Agent1@coiffeur.com": "{\"mail\":\"Agent1@coiffeur.com\",\"name\":\"Agent1\",\"surname\":\"Agent1\",\"phoneNumber\":\"01\"}",
-      "Agent2@coiffeur.com": "{\"mail\":\"Agent2@coiffeur.com\",\"name\":\"Agent2\",\"surname\":\"Agent2\",\"phoneNumber\":\"02\"}",
-      "Agent3@coiffeur.com": "{\"mail\":\"Agent3@coiffeur.com\",\"name\":\"Agent3\",\"surname\":\"Agent3\",\"phoneNumber\":\"03\"}",
-      "Agent4@coiffeur.com": "{\"mail\":\"Agent4@coiffeur.com\",\"name\":\"Agent4\",\"surname\":\"Agent4\",\"phoneNumber\":\"04\"}"
+    "Client": {
+      "1": "{\"nom\":\"chauve\",\"prenom\":\"chauve\",\"mdp\":\"chauve\",\"sexe\":\"H\",\"id\":1}",
+      "2": "{\"nom\":\"rousse\",\"prenom\":\"rousse\",\"mdp\":\"rousse\",\"sexe\":\"F\",\"id\":2}"
     },
-    "Customer": {
-      "alpha@client.com": "{\"name\":\"alpha\",\"surname\":\"alpha\",\"mail\":\"alpha@client.com\",\"phoneNumber\":\"10\"}",
-      "beta@client.com": "{\"name\":\"beta\",\"surname\":\"beta\",\"mail\":\"beta@client.com\",\"phoneNumber\":\"20\"}",
-      "gamma@client.com": "{\"name\":\"gamma\",\"surname\":\"gamma\",\"mail\":\"gamma@client.com\",\"phoneNumber\":\"30\"}",
-      "delta@client.com": "{\"name\":\"delta\",\"surname\":\"delta\",\"mail\":\"delta@client.com\",\"phoneNumber\":\"40\"}",
-      "epsilon@client.com": "{\"name\":\"epsilon\",\"surname\":\"epsilon\",\"mail\":\"epsilon@client.com\",\"phoneNumber\":\"50\"}"
+    "Coiffeur": {
+      "1": "{\"nom\":\"peigne\",\"mdp\":\"peigne\",\"id\":1}",
+      "2": "{\"nom\":\"rasoir\",\"mdp\":\"rasoir\",\"id\":2}"
+    },
+    "Rdv": {
+      "1": "{\"date\":\"2020-01-24T22:24:02.585Z\",\"clientId\":1,\"coiffeurId\":1,\"id\":1}",
+      "2": "{\"date\":\"2020-01-24T22:24:02.585Z\",\"clientId\":1,\"coiffeurId\":1,\"id\":2}",
+      "3": "{\"date\":\"2020-01-24T22:24:02.585Z\",\"clientId\":2,\"coiffeurId\":1,\"id\":3}",
+      "4": "{\"date\":\"2020-01-24T22:24:02.585Z\",\"clientId\":2,\"coiffeurId\":2,\"id\":4}"
     }
   }
 }

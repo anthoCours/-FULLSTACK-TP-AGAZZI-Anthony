@@ -1,4 +1,3 @@
-
-export * from './customer.model';
-export * from './hairdresser.model';
-export * from './meeting.model';
+export * from './client.model';
+export * from './coiffeur.model';
+export * from './rdv.model';

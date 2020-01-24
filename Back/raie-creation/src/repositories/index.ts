@@ -1,3 +1,3 @@
-export * from './customer.repository';
-export * from './hairdresser.repository';
-export * from './meeting.repository';
+export * from './client.repository';
+export * from './coiffeur.repository';
+export * from './rdv.repository';

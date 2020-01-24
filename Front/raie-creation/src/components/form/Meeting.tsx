@@ -12,7 +12,7 @@ const MeetingForm: React.FC = () => {
     const now = new Date()
     const nowbis = new Date(new Date().setHours(new Date().getHours() +1 ))
     const customer = 'Paul'
-    const [events, setEvent]: [Array<{start: Date, end: Date, title: string}>, (any)] = useState([{start: now, end: nowbis,title: customer }])
+    const [events, setEvent]: [Array<{start: Date, end: Date, title: string}>, (any)] = useState([]) // {start: now, end: nowbis,title: customer }
     const handleSelect = ({ start, end }: any) => {
         setEvent([
                 ...events,
